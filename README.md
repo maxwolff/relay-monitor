@@ -27,3 +27,8 @@ start sending mock requests to the relay monitor. these are forwarded to the moc
 observe relay stats of our mock-relay
 
 - `curl http://localhost:3000/relay_monitor/get_relay_stats`
+
+# docker
+
+`docker build . -t monitor`
+`docker run -it -p 127.0.0.1:3000:3000 monitor`
