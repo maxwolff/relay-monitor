@@ -30,5 +30,7 @@ observe relay stats of our mock-relay
 
 # docker
 
+`npm install`
+`npm run build`
 `docker build . -t monitor`
 `docker run -it -p 127.0.0.1:3000:3000 monitor`
