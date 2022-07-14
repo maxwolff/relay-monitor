@@ -1,4 +1,6 @@
-# Relay Monitor
+# Relay Monitor - Flashbots Work Test
+
+### [Spec](https://hackmd.io/@GUEKFRb9TryQv9zr8Zjx8Q/SJ-d0g9i5)
 
 A service that keeps stats on the behavior of builder-relays, and exposes an endpoint that mev-boost could use to check on performance.
 

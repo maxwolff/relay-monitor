@@ -66,7 +66,7 @@ export const handleGetRelayStats = () => {
   // find each relay's % of successful responses, ie: relay's response time was under a limit, and the response was deemed valid
   // TODO fix: if no valid responses, relay does not get a reputation bc COUNT.
   const query = db.prepare(
-    "SELECT b.relay_url, COUNT(b.relay_url) *1.0 / (SELECT COUNT(b.relay_url) from blindedBlocksResponses b GROUP BY relay_url) AS rep \
+    "SELECT b.relay_url, COUNT(b.relay_url) *1.0 / (SELECT COUNT(b.relay_url) from blindedBlocksResponses b GROUP BY relay_url) AS blindBlockResponseRate \
     from blindedBlocksResponses b WHERE b.response_time<(?) AND b.response_valid = 1 GROUP BY relay_url;"
   );
   return query.all(MAX_RESP_TIME);
