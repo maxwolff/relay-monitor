@@ -1,4 +1,4 @@
-# Relay Monitor - Flashbots Work Test
+# Relay Monitor PoC
 
 ### [Spec](https://hackmd.io/@GUEKFRb9TryQv9zr8Zjx8Q/SJ-d0g9i5)
 
